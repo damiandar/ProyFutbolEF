@@ -1,0 +1,24 @@
+<p>LISTADO DE FUTBOLISTAS</p>
+
+<table class= "table"> 
+    <tr>    
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Pais</th>
+        <th>Descripcion</th>
+        <th>Goles</th>
+        <th>Equipo</th>
+        <th>Contrato</th>
+    </tr>
+    <tr *ngFor="let fut of listadoFutbolistas">  
+        <td>{{fut.futbolistaId}}</td>
+        <td>{{fut.nombre}}</td>
+        <td>{{fut.edad}}</td>
+        <td>{{fut.pais}}</td>
+        <td>{{fut.descripcion}}</td>
+        <td>{{fut.goles}}</td>
+        <td>{{fut.equipo}}</td>
+        <td>{{fut.contrato.sueldo}}</td>
+    </tr>
+</table>
